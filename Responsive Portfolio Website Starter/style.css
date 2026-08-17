@@ -7,10 +7,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 :root {
-  --bg-color: #D39CAD;
-  --second-bg-color: #CE6A85;
-  --text-color: #0D1821;
-  --main-color: #B7FDFE;
+  --bg-color: #FDE857;
+  --second-bg-color: #fdea64;
+  --text-color: black;
+  --main-color: #453222;
+  --pop-color: #f779cb;
 }
 html {
   font-size: 60%;
@@ -21,12 +22,12 @@ body{
   color: var(--text-color);
 }
 .header{
-  background: var(--bg-color);
+  background: #ffe14c;
   width: 100;
   top: 0;
   left: 0;
   padding: 4rem 15%;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(105, 99, 99, 0.1); */
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -51,14 +52,13 @@ body{
 span{
   background: linear-gradient(270deg, #CE6A85 10%, #B7FDFE 100%);
   background-clip: text;
-  color: trnasparent;
+  color: transparent;
 }
 .navbar{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   font-weight: 500;
   transition: 0.3s ease-in-out;
-  border-bottom:3px solid var(--main-color);
 }
 .navbar > a{
   padding-left:2rem;
@@ -87,7 +87,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
 }
 .home-content{
   display: flex;
@@ -115,6 +115,17 @@ section{
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 199px var(--main-color);
 }
+.stack-icons img{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  padding: 0.5rem;
+  background: transparent;
+  color: var(--main-color);
+  margin: 1rem;
+  transition: 0.3s ease-in-out;
+}
 .social-icons a{
   display: inline-flex;
   justify-content: center;
@@ -125,7 +136,7 @@ section{
   border: 2px solid var(--main-color);
   border-radius: 50%;
   color: var(--main-color);
-  margin: 3rem 0.5rem;
+  margin: 1.5rem 1rem;
   transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
