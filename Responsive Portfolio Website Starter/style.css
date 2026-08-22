@@ -340,3 +340,48 @@ body{
   background-image:  radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
 }
+
+.projects {
+  background-color: var(--yellow-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 10%;
+}
+
+.project-preview {
+  width: auto;
+  height: 55vh;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--main-color);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.project-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card{
+  background: var(--main-color);
+  color: var(--blue);
+  border-radius: 16px;
+  min-height: 40vh;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card *{
+  padding: 15px;
+}
